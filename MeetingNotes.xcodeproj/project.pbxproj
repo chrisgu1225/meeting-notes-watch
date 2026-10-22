@@ -1,0 +1,696 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 63;
+	objects = {
+
+		3FBB4A343EE1E3FE5973BCEE /* AudioRetentionPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRetentionPolicy.swift; sourceTree = "<group>"; };
+		634C214546C7CAC8B7CECB4F /* AdelaideClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdelaideClock.swift; sourceTree = "<group>"; };
+		A6B70F6A0FDE07F89B8BC4FF /* MeetingLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingLanguage.swift; sourceTree = "<group>"; };
+		410A37CD80BE41C3FC0C1373 /* RecognitionRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecognitionRoute.swift; sourceTree = "<group>"; };
+		93C1D31F842A51AC53C37B69 /* VocabularyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyList.swift; sourceTree = "<group>"; };
+		F159674C04CE3BD729FD4761 /* MeetingSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingSession.swift; sourceTree = "<group>"; };
+		B069EFE4F1E239312F8E9570 /* TranscriptJoiner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptJoiner.swift; sourceTree = "<group>"; };
+		829D8762CAC21C083FFD4A6D /* ExportDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportDocument.swift; sourceTree = "<group>"; };
+		05C4470EEC2C4284BB4C9654 /* WireProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireProtocol.swift; sourceTree = "<group>"; };
+		85B74F9796D1442EA30F0D9F /* MeetingNotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingNotesApp.swift; sourceTree = "<group>"; };
+		30951A78E1E3A0B9802A068D /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		E58E6D1A5BE68E988B0FEE64 /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
+		22895913BBF59B57F7B798B7 /* ExportCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportCoordinator.swift; sourceTree = "<group>"; };
+		A92234BEB274EC3C8FD74B52 /* WatchBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchBridge.swift; sourceTree = "<group>"; };
+		FAD877EBA6E80D9644E25448 /* PhoneController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneController.swift; sourceTree = "<group>"; };
+		C06565E2AAEB8C10803617C3 /* PCMQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCMQueue.swift; sourceTree = "<group>"; };
+		5620FD9EAC4AAAFC0922EB6F /* PCMBuffers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCMBuffers.swift; sourceTree = "<group>"; };
+		415145071ECE467964192588 /* AnalyzerBufferConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzerBufferConverter.swift; sourceTree = "<group>"; };
+		4621E358A3316A953C4F0177 /* AudioGate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioGate.swift; sourceTree = "<group>"; };
+		B5B30471661B1BDF18095577 /* RecognitionSetupError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecognitionSetupError.swift; sourceTree = "<group>"; };
+		52B396D690D4DBD62A6B5179 /* AnalyzerBackend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzerBackend.swift; sourceTree = "<group>"; };
+		596725661650CADD08FB9137 /* SFSpeechBackend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSpeechBackend.swift; sourceTree = "<group>"; };
+		73C4DAA78F2E7D3E6252EA9F /* LiveRecognitionSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveRecognitionSession.swift; sourceTree = "<group>"; };
+		2A5655E9FCDF554B38D7E6CE /* RecognizerProbe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecognizerProbe.swift; sourceTree = "<group>"; };
+		FCF3AE3FB9C709F381C44568 /* SessionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionListView.swift; sourceTree = "<group>"; };
+		2047A8BF3CD6433CA7EF4D77 /* SessionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDetailView.swift; sourceTree = "<group>"; };
+		5B6C4AB75A76D1860F55C1DF /* DocumentPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPicker.swift; sourceTree = "<group>"; };
+		FC05A5A120B8488EB92ECD26 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A8A9C1C588382920C3303CE4 /* AudioCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioCapture.swift; sourceTree = "<group>"; };
+		0D2A9B5832DAF8BCAAA17005 /* AudioSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSender.swift; sourceTree = "<group>"; };
+		CFDB530D980FCD60E0EE1D28 /* WatchPhoneBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchPhoneBridge.swift; sourceTree = "<group>"; };
+		43D08F57F4D6D96C6B189137 /* WatchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchModel.swift; sourceTree = "<group>"; };
+		EE5962F02BF6AAB342692B89 /* WatchRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchRootView.swift; sourceTree = "<group>"; };
+		22485284D6B170741581CC0E /* MeetingNotesWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingNotesWatchApp.swift; sourceTree = "<group>"; };
+		621C05DADF1090FBE84E3431 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		16EA4AEDA608C88F6A4EFE59 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		711101D172C62ED19A3BF68C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8729C9525C00FD27DEC8163 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		760064CF5DDE79BD88EDF8DC /* FormatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatTests.swift; sourceTree = "<group>"; };
+		DBFE6CB054589F41CBF86C09 /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
+		CC1F11803BE98DE32AE57E96 /* iOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = iOS.xcconfig; sourceTree = "<group>"; };
+		90CF45DF15C447F26823E16C /* Watch.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Watch.xcconfig; sourceTree = "<group>"; };
+		2CA0AA06EFAFC5C6763B2DC3 /* Tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Tests.xcconfig; sourceTree = "<group>"; };
+		81D9EAE657B7B91E9E950D54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D4EC63D3521B673F74390EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64E6D39E8291F431FB91FE2D /* MeetingNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeetingNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9598D1D9E2B3D6E898F33ECF /* MeetingNotesWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeetingNotesWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD98E10B139C751D8E383D58 /* MeetingNotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeetingNotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCA2CC3FF831712C4404BD55 /* Speech.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Speech.framework; path = System/Library/Frameworks/Speech.framework; sourceTree = SDKROOT; };
+		D0F7FC390B79054615EFE6E4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D0F66B18876EE697D5519480 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
+		AA2A89692F7F3135E980A2AE /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = System/Library/Frameworks/WatchKit.framework; sourceTree = SDKROOT; };
+		CD051A5CA21F238D40713FEE /* AudioRetentionPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBB4A343EE1E3FE5973BCEE /* AudioRetentionPolicy.swift */; };
+		66D0FFABEDC92119A522CF00 /* AdelaideClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634C214546C7CAC8B7CECB4F /* AdelaideClock.swift */; };
+		A790FF5D47B9FE771F4E0C76 /* MeetingLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B70F6A0FDE07F89B8BC4FF /* MeetingLanguage.swift */; };
+		7E4EDFBBCDB4CED00A324D51 /* RecognitionRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410A37CD80BE41C3FC0C1373 /* RecognitionRoute.swift */; };
+		50C2FF375C9E28EF73B4E1C2 /* VocabularyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C1D31F842A51AC53C37B69 /* VocabularyList.swift */; };
+		1D2CB28D5F9514716D9F88F6 /* MeetingSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = F159674C04CE3BD729FD4761 /* MeetingSession.swift */; };
+		D57991375912B2ABE73B6484 /* TranscriptJoiner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B069EFE4F1E239312F8E9570 /* TranscriptJoiner.swift */; };
+		8AE2F3555CA78CFA890C8F71 /* ExportDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829D8762CAC21C083FFD4A6D /* ExportDocument.swift */; };
+		38D72380310832F9266946CA /* WireProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C4470EEC2C4284BB4C9654 /* WireProtocol.swift */; };
+		05393B2BB74C835CA6F18B39 /* MeetingNotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B74F9796D1442EA30F0D9F /* MeetingNotesApp.swift */; };
+		F9129138C2E21A1AC7F6BCFB /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30951A78E1E3A0B9802A068D /* SessionStore.swift */; };
+		D8124949E39673E3629E49D5 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58E6D1A5BE68E988B0FEE64 /* SettingsStore.swift */; };
+		8D7232CDE91D0B41D7879C30 /* ExportCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22895913BBF59B57F7B798B7 /* ExportCoordinator.swift */; };
+		6003FC964F07DE8D69586FDC /* WatchBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92234BEB274EC3C8FD74B52 /* WatchBridge.swift */; };
+		4FBAF67CD38A8F06E7E63AAD /* PhoneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD877EBA6E80D9644E25448 /* PhoneController.swift */; };
+		77440FD34CB6A7516C3AE27A /* PCMQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06565E2AAEB8C10803617C3 /* PCMQueue.swift */; };
+		F45CEDC75F27843B31177286 /* PCMBuffers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5620FD9EAC4AAAFC0922EB6F /* PCMBuffers.swift */; };
+		26D906A9DAF0D6BA00ECB116 /* AnalyzerBufferConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415145071ECE467964192588 /* AnalyzerBufferConverter.swift */; };
+		32D9466B6153627840B7BAE9 /* AudioGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4621E358A3316A953C4F0177 /* AudioGate.swift */; };
+		BE4C5766282C375F292B81F5 /* RecognitionSetupError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B30471661B1BDF18095577 /* RecognitionSetupError.swift */; };
+		2FB294B8743D6CB3FE94326E /* AnalyzerBackend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B396D690D4DBD62A6B5179 /* AnalyzerBackend.swift */; };
+		F6782AC43EF3204047C9AA39 /* SFSpeechBackend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596725661650CADD08FB9137 /* SFSpeechBackend.swift */; };
+		AF06AA9ED80E109F4933101A /* LiveRecognitionSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C4DAA78F2E7D3E6252EA9F /* LiveRecognitionSession.swift */; };
+		D80669967F3FF80CE0C3EF2F /* RecognizerProbe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5655E9FCDF554B38D7E6CE /* RecognizerProbe.swift */; };
+		6414B6CDAD799F0076B2DEB3 /* SessionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF3AE3FB9C709F381C44568 /* SessionListView.swift */; };
+		2523682F918622DB82DF6118 /* SessionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2047A8BF3CD6433CA7EF4D77 /* SessionDetailView.swift */; };
+		8E57705A8962690EFDE94397 /* DocumentPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6C4AB75A76D1860F55C1DF /* DocumentPicker.swift */; };
+		F224A68E6939E00E9CE3B2CC /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC05A5A120B8488EB92ECD26 /* SettingsView.swift */; };
+		2A2F31B8727421F9C44E971C /* AudioRetentionPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBB4A343EE1E3FE5973BCEE /* AudioRetentionPolicy.swift */; };
+		253A0C3720E2D3A57AF4AF59 /* AdelaideClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634C214546C7CAC8B7CECB4F /* AdelaideClock.swift */; };
+		CD61DB37DABE869432164D53 /* MeetingLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B70F6A0FDE07F89B8BC4FF /* MeetingLanguage.swift */; };
+		D894E1A6902941F9EDAA0C52 /* RecognitionRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410A37CD80BE41C3FC0C1373 /* RecognitionRoute.swift */; };
+		3C4035BEC0012E13C2F82E97 /* VocabularyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C1D31F842A51AC53C37B69 /* VocabularyList.swift */; };
+		AD1ABC086F4E26367ADDBDA4 /* MeetingSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = F159674C04CE3BD729FD4761 /* MeetingSession.swift */; };
+		3091D5CF8DF4DC362D552998 /* TranscriptJoiner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B069EFE4F1E239312F8E9570 /* TranscriptJoiner.swift */; };
+		FE7F6B63E4BBDE8A6D1CA0BD /* ExportDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829D8762CAC21C083FFD4A6D /* ExportDocument.swift */; };
+		B2ACC8BFBAE658789F38AE68 /* WireProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C4470EEC2C4284BB4C9654 /* WireProtocol.swift */; };
+		E091E3ED8E5E27E29C0A8AB3 /* AudioCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A9C1C588382920C3303CE4 /* AudioCapture.swift */; };
+		37F5AFC8655D6F1A0B9876CD /* AudioSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2A9B5832DAF8BCAAA17005 /* AudioSender.swift */; };
+		3026E7926B5A1E87DB66FF29 /* WatchPhoneBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDB530D980FCD60E0EE1D28 /* WatchPhoneBridge.swift */; };
+		F19823228006035458558EF8 /* WatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D08F57F4D6D96C6B189137 /* WatchModel.swift */; };
+		E7631D9B8C20C40D8454427B /* WatchRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5962F02BF6AAB342692B89 /* WatchRootView.swift */; };
+		792DB99FA818F81718D00B3A /* MeetingNotesWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22485284D6B170741581CC0E /* MeetingNotesWatchApp.swift */; };
+		211AE7B7AA01E5F139A5E9A8 /* FormatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760064CF5DDE79BD88EDF8DC /* FormatTests.swift */; };
+		E934068D54339E05B0B59CCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 621C05DADF1090FBE84E3431 /* Assets.xcassets */; };
+		F9E394845480142C247F2806 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 16EA4AEDA608C88F6A4EFE59 /* PrivacyInfo.xcprivacy */; };
+		5ACC66B91231C5F7620111D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 711101D172C62ED19A3BF68C /* Assets.xcassets */; };
+		0FFEB9565E8C9D24920F9039 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = D8729C9525C00FD27DEC8163 /* PrivacyInfo.xcprivacy */; };
+		B743AAE0F020EEEECDF92B8B /* MeetingNotesWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 9598D1D9E2B3D6E898F33ECF /* MeetingNotesWatch.app */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		33AFFD2FE00C0490CEB729C5 /* Speech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCA2CC3FF831712C4404BD55 /* Speech.framework */; };
+		8FAC6ECBF50CD1A19775A2D6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0F7FC390B79054615EFE6E4 /* AVFoundation.framework */; };
+		135AE4657ACC90A4F26CC5CC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0F7FC390B79054615EFE6E4 /* AVFoundation.framework */; };
+		F17794CA65657BF85281E6D8 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0F66B18876EE697D5519480 /* WatchConnectivity.framework */; };
+		FA922978468F01612AD1F941 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0F66B18876EE697D5519480 /* WatchConnectivity.framework */; };
+		26B7572B7A1C0DBD058B2F0C /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA2A89692F7F3135E980A2AE /* WatchKit.framework */; };
+		C35B5AB252C381D6C531E578 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD051A5CA21F238D40713FEE /* AudioRetentionPolicy.swift in Sources */,
+				66D0FFABEDC92119A522CF00 /* AdelaideClock.swift in Sources */,
+				A790FF5D47B9FE771F4E0C76 /* MeetingLanguage.swift in Sources */,
+				7E4EDFBBCDB4CED00A324D51 /* RecognitionRoute.swift in Sources */,
+				50C2FF375C9E28EF73B4E1C2 /* VocabularyList.swift in Sources */,
+				1D2CB28D5F9514716D9F88F6 /* MeetingSession.swift in Sources */,
+				D57991375912B2ABE73B6484 /* TranscriptJoiner.swift in Sources */,
+				8AE2F3555CA78CFA890C8F71 /* ExportDocument.swift in Sources */,
+				38D72380310832F9266946CA /* WireProtocol.swift in Sources */,
+				05393B2BB74C835CA6F18B39 /* MeetingNotesApp.swift in Sources */,
+				F9129138C2E21A1AC7F6BCFB /* SessionStore.swift in Sources */,
+				D8124949E39673E3629E49D5 /* SettingsStore.swift in Sources */,
+				8D7232CDE91D0B41D7879C30 /* ExportCoordinator.swift in Sources */,
+				6003FC964F07DE8D69586FDC /* WatchBridge.swift in Sources */,
+				4FBAF67CD38A8F06E7E63AAD /* PhoneController.swift in Sources */,
+				77440FD34CB6A7516C3AE27A /* PCMQueue.swift in Sources */,
+				F45CEDC75F27843B31177286 /* PCMBuffers.swift in Sources */,
+				26D906A9DAF0D6BA00ECB116 /* AnalyzerBufferConverter.swift in Sources */,
+				32D9466B6153627840B7BAE9 /* AudioGate.swift in Sources */,
+				BE4C5766282C375F292B81F5 /* RecognitionSetupError.swift in Sources */,
+				2FB294B8743D6CB3FE94326E /* AnalyzerBackend.swift in Sources */,
+				F6782AC43EF3204047C9AA39 /* SFSpeechBackend.swift in Sources */,
+				AF06AA9ED80E109F4933101A /* LiveRecognitionSession.swift in Sources */,
+				D80669967F3FF80CE0C3EF2F /* RecognizerProbe.swift in Sources */,
+				6414B6CDAD799F0076B2DEB3 /* SessionListView.swift in Sources */,
+				2523682F918622DB82DF6118 /* SessionDetailView.swift in Sources */,
+				8E57705A8962690EFDE94397 /* DocumentPicker.swift in Sources */,
+				F224A68E6939E00E9CE3B2CC /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E93CD579E09A3C7B67FC4995 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A2F31B8727421F9C44E971C /* AudioRetentionPolicy.swift in Sources */,
+				253A0C3720E2D3A57AF4AF59 /* AdelaideClock.swift in Sources */,
+				CD61DB37DABE869432164D53 /* MeetingLanguage.swift in Sources */,
+				D894E1A6902941F9EDAA0C52 /* RecognitionRoute.swift in Sources */,
+				3C4035BEC0012E13C2F82E97 /* VocabularyList.swift in Sources */,
+				AD1ABC086F4E26367ADDBDA4 /* MeetingSession.swift in Sources */,
+				3091D5CF8DF4DC362D552998 /* TranscriptJoiner.swift in Sources */,
+				FE7F6B63E4BBDE8A6D1CA0BD /* ExportDocument.swift in Sources */,
+				B2ACC8BFBAE658789F38AE68 /* WireProtocol.swift in Sources */,
+				E091E3ED8E5E27E29C0A8AB3 /* AudioCapture.swift in Sources */,
+				37F5AFC8655D6F1A0B9876CD /* AudioSender.swift in Sources */,
+				3026E7926B5A1E87DB66FF29 /* WatchPhoneBridge.swift in Sources */,
+				F19823228006035458558EF8 /* WatchModel.swift in Sources */,
+				E7631D9B8C20C40D8454427B /* WatchRootView.swift in Sources */,
+				792DB99FA818F81718D00B3A /* MeetingNotesWatchApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		007054A6929B6281BD19871B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				211AE7B7AA01E5F139A5E9A8 /* FormatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B38D33126B222D45D3A5A6AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E934068D54339E05B0B59CCD /* Assets.xcassets in Resources */,
+				F9E394845480142C247F2806 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72A7A873850B460BB1E871C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ACC66B91231C5F7620111D8 /* Assets.xcassets in Resources */,
+				0FFEB9565E8C9D24920F9039 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F21AD7B038F8BD24218C58C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33AFFD2FE00C0490CEB729C5 /* Speech.framework in Frameworks */,
+				8FAC6ECBF50CD1A19775A2D6 /* AVFoundation.framework in Frameworks */,
+				F17794CA65657BF85281E6D8 /* WatchConnectivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1BF6B8D592AC3CF205C7115 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				135AE4657ACC90A4F26CC5CC /* AVFoundation.framework in Frameworks */,
+				FA922978468F01612AD1F941 /* WatchConnectivity.framework in Frameworks */,
+				26B7572B7A1C0DBD058B2F0C /* WatchKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3CAFC0486BBF60C3FC17F5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D25B95A21C80C0BFC2694BD4 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				B743AAE0F020EEEECDF92B8B /* MeetingNotesWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD30A59CFEBCA6C71503281D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98F54143AB4E86B28C3AFEE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6E2A020FCEC157474D97F03;
+			remoteInfo = MeetingNotesWatch;
+		};
+		9CA5ECFFDA536398C5E4E288 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C6E2A020FCEC157474D97F03 /* MeetingNotesWatch */;
+			targetProxy = BD30A59CFEBCA6C71503281D /* PBXContainerItemProxy */;
+		};
+		F589E72BCE022DEAAA5C8795 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98F54143AB4E86B28C3AFEE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA1BBEB035328A3BC110B813;
+			remoteInfo = MeetingNotes;
+		};
+		BE0385CCB8A397F8E5C005A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA1BBEB035328A3BC110B813 /* MeetingNotes */;
+			targetProxy = F589E72BCE022DEAAA5C8795 /* PBXContainerItemProxy */;
+		};
+		CDF0301C1A1E5A9D7B414C8D /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				3FBB4A343EE1E3FE5973BCEE /* AudioRetentionPolicy.swift */,
+				634C214546C7CAC8B7CECB4F /* AdelaideClock.swift */,
+				A6B70F6A0FDE07F89B8BC4FF /* MeetingLanguage.swift */,
+				410A37CD80BE41C3FC0C1373 /* RecognitionRoute.swift */,
+				93C1D31F842A51AC53C37B69 /* VocabularyList.swift */,
+				F159674C04CE3BD729FD4761 /* MeetingSession.swift */,
+				B069EFE4F1E239312F8E9570 /* TranscriptJoiner.swift */,
+				829D8762CAC21C083FFD4A6D /* ExportDocument.swift */,
+				05C4470EEC2C4284BB4C9654 /* WireProtocol.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		D6DDB87319825178134AC542 /* Recognition */ = {
+			isa = PBXGroup;
+			children = (
+				C06565E2AAEB8C10803617C3 /* PCMQueue.swift */,
+				5620FD9EAC4AAAFC0922EB6F /* PCMBuffers.swift */,
+				415145071ECE467964192588 /* AnalyzerBufferConverter.swift */,
+				4621E358A3316A953C4F0177 /* AudioGate.swift */,
+				B5B30471661B1BDF18095577 /* RecognitionSetupError.swift */,
+				52B396D690D4DBD62A6B5179 /* AnalyzerBackend.swift */,
+				596725661650CADD08FB9137 /* SFSpeechBackend.swift */,
+				73C4DAA78F2E7D3E6252EA9F /* LiveRecognitionSession.swift */,
+				2A5655E9FCDF554B38D7E6CE /* RecognizerProbe.swift */,
+			);
+			path = Recognition;
+			sourceTree = "<group>";
+		};
+		04CDB0877611B3613D3600D8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FCF3AE3FB9C709F381C44568 /* SessionListView.swift */,
+				2047A8BF3CD6433CA7EF4D77 /* SessionDetailView.swift */,
+				5B6C4AB75A76D1860F55C1DF /* DocumentPicker.swift */,
+				FC05A5A120B8488EB92ECD26 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DC24675E1D15B3538999DD2F /* MeetingNotes */ = {
+			isa = PBXGroup;
+			children = (
+				85B74F9796D1442EA30F0D9F /* MeetingNotesApp.swift */,
+				30951A78E1E3A0B9802A068D /* SessionStore.swift */,
+				E58E6D1A5BE68E988B0FEE64 /* SettingsStore.swift */,
+				22895913BBF59B57F7B798B7 /* ExportCoordinator.swift */,
+				A92234BEB274EC3C8FD74B52 /* WatchBridge.swift */,
+				FAD877EBA6E80D9644E25448 /* PhoneController.swift */,
+				621C05DADF1090FBE84E3431 /* Assets.xcassets */,
+				16EA4AEDA608C88F6A4EFE59 /* PrivacyInfo.xcprivacy */,
+				81D9EAE657B7B91E9E950D54 /* Info.plist */,
+				D6DDB87319825178134AC542 /* Recognition */,
+				04CDB0877611B3613D3600D8 /* Views */,
+			);
+			path = MeetingNotes;
+			sourceTree = "<group>";
+		};
+		5E564229301E4F63D5681BDB /* MeetingNotesWatch */ = {
+			isa = PBXGroup;
+			children = (
+				A8A9C1C588382920C3303CE4 /* AudioCapture.swift */,
+				0D2A9B5832DAF8BCAAA17005 /* AudioSender.swift */,
+				CFDB530D980FCD60E0EE1D28 /* WatchPhoneBridge.swift */,
+				43D08F57F4D6D96C6B189137 /* WatchModel.swift */,
+				EE5962F02BF6AAB342692B89 /* WatchRootView.swift */,
+				22485284D6B170741581CC0E /* MeetingNotesWatchApp.swift */,
+				711101D172C62ED19A3BF68C /* Assets.xcassets */,
+				D8729C9525C00FD27DEC8163 /* PrivacyInfo.xcprivacy */,
+				9D4EC63D3521B673F74390EA /* Info.plist */,
+			);
+			path = MeetingNotesWatch;
+			sourceTree = "<group>";
+		};
+		E600640CF448C4B277081405 /* MeetingNotesTests */ = {
+			isa = PBXGroup;
+			children = (
+				760064CF5DDE79BD88EDF8DC /* FormatTests.swift */,
+			);
+			path = MeetingNotesTests;
+			sourceTree = "<group>";
+		};
+		5D49A7D678FBF5CFF195277B /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				DBFE6CB054589F41CBF86C09 /* Shared.xcconfig */,
+				CC1F11803BE98DE32AE57E96 /* iOS.xcconfig */,
+				90CF45DF15C447F26823E16C /* Watch.xcconfig */,
+				2CA0AA06EFAFC5C6763B2DC3 /* Tests.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		0919091FE42124E9D8790C88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FCA2CC3FF831712C4404BD55 /* Speech.framework */,
+				D0F7FC390B79054615EFE6E4 /* AVFoundation.framework */,
+				D0F66B18876EE697D5519480 /* WatchConnectivity.framework */,
+				AA2A89692F7F3135E980A2AE /* WatchKit.framework */,
+			);
+			sourceTree = "<group>";
+		};
+		067A5420A35CCB7EAFB124BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64E6D39E8291F431FB91FE2D /* MeetingNotes.app */,
+				9598D1D9E2B3D6E898F33ECF /* MeetingNotesWatch.app */,
+				BD98E10B139C751D8E383D58 /* MeetingNotesTests.xctest */,
+			);
+			sourceTree = "<group>";
+		};
+		B5BDD60DAB12CCC30FAF2333 /* MeetingNotes */ = {
+			isa = PBXGroup;
+			children = (
+				5D49A7D678FBF5CFF195277B /* Config */,
+				CDF0301C1A1E5A9D7B414C8D /* Shared */,
+				DC24675E1D15B3538999DD2F /* MeetingNotes */,
+				5E564229301E4F63D5681BDB /* MeetingNotesWatch */,
+				E600640CF448C4B277081405 /* MeetingNotesTests */,
+				0919091FE42124E9D8790C88 /* Frameworks */,
+				067A5420A35CCB7EAFB124BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B0B56C12A90899E4707AE233 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C2FD164E71C295B24A6638ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F02478A04DB5C93F34AFBAD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC1F11803BE98DE32AE57E96;
+			buildSettings = {
+
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_TESTABILITY = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B51728D4EC31E6D6CD0AEA73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC1F11803BE98DE32AE57E96;
+			buildSettings = {
+
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E5C92BF78F1827626CA11E12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90CF45DF15C447F26823E16C;
+			buildSettings = {
+
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Debug;
+		};
+		A1598FA4E7E592713F4142D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90CF45DF15C447F26823E16C;
+			buildSettings = {
+
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Release;
+		};
+		CDB615A2C0548DDB8E70E1D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CA0AA06EFAFC5C6763B2DC3;
+			buildSettings = {
+
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeetingNotes.app/MeetingNotes";
+			};
+			name = Debug;
+		};
+		4DDCA4E9B43911AE72834064 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CA0AA06EFAFC5C6763B2DC3;
+			buildSettings = {
+
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeetingNotes.app/MeetingNotes";
+			};
+			name = Release;
+		};
+		49C85748B039AA67684CD29B /* Build configuration list for PBXProject */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0B56C12A90899E4707AE233 /* Debug */,
+				C2FD164E71C295B24A6638ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AB2AE74D862BDE00F033E9C /* Build configuration list for PBXNativeTarget MeetingNotes */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F02478A04DB5C93F34AFBAD2 /* Debug */,
+				B51728D4EC31E6D6CD0AEA73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02406BB55FD144D8FE9CB8AB /* Build configuration list for PBXNativeTarget MeetingNotesWatch */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5C92BF78F1827626CA11E12 /* Debug */,
+				A1598FA4E7E592713F4142D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B93D61D7F85D5F51CC8BB50A /* Build configuration list for PBXNativeTarget MeetingNotesTests */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDB615A2C0548DDB8E70E1D1 /* Debug */,
+				4DDCA4E9B43911AE72834064 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA1BBEB035328A3BC110B813 /* MeetingNotes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AB2AE74D862BDE00F033E9C /* Build configuration list for PBXNativeTarget MeetingNotes */;
+			buildPhases = (
+				C35B5AB252C381D6C531E578 /* Sources */,
+				F21AD7B038F8BD24218C58C3 /* Frameworks */,
+				B38D33126B222D45D3A5A6AE /* Resources */,
+				D25B95A21C80C0BFC2694BD4 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CA5ECFFDA536398C5E4E288 /* PBXTargetDependency */,
+			);
+			name = MeetingNotes;
+			productName = MeetingNotes;
+			productReference = 64E6D39E8291F431FB91FE2D /* MeetingNotes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C6E2A020FCEC157474D97F03 /* MeetingNotesWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02406BB55FD144D8FE9CB8AB /* Build configuration list for PBXNativeTarget MeetingNotesWatch */;
+			buildPhases = (
+				E93CD579E09A3C7B67FC4995 /* Sources */,
+				A1BF6B8D592AC3CF205C7115 /* Frameworks */,
+				72A7A873850B460BB1E871C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeetingNotesWatch;
+			productName = MeetingNotesWatch;
+			productReference = 9598D1D9E2B3D6E898F33ECF /* MeetingNotesWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		279DDEE9C1A8F87AE4AC93D5 /* MeetingNotesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B93D61D7F85D5F51CC8BB50A /* Build configuration list for PBXNativeTarget MeetingNotesTests */;
+			buildPhases = (
+				007054A6929B6281BD19871B /* Sources */,
+				E3CAFC0486BBF60C3FC17F5E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE0385CCB8A397F8E5C005A9 /* PBXTargetDependency */,
+			);
+			name = MeetingNotesTests;
+			productName = MeetingNotesTests;
+			productReference = BD98E10B139C751D8E383D58 /* MeetingNotesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		98F54143AB4E86B28C3AFEE0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					AA1BBEB035328A3BC110B813 = {
+						CreatedOnToolsVersion = 26.0;
+					};
+					C6E2A020FCEC157474D97F03 = {
+						CreatedOnToolsVersion = 26.0;
+					};
+					279DDEE9C1A8F87AE4AC93D5 = {
+						CreatedOnToolsVersion = 26.0;
+						TestTargetID = AA1BBEB035328A3BC110B813;
+					};
+				};
+			};
+			buildConfigurationList = 49C85748B039AA67684CD29B /* Build configuration list for PBXProject */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = "zh-Hans";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = B5BDD60DAB12CCC30FAF2333;
+			productRefGroup = 067A5420A35CCB7EAFB124BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA1BBEB035328A3BC110B813 /* MeetingNotes */,
+				C6E2A020FCEC157474D97F03 /* MeetingNotesWatch */,
+				279DDEE9C1A8F87AE4AC93D5 /* MeetingNotesTests */,
+			);
+		};
+	};
+	rootObject = 98F54143AB4E86B28C3AFEE0 /* Project object */;
+}

@@ -1,0 +1,11 @@
+// Change this prefix before the first device install if it is already taken.
+// The watch bundle id becomes $(BUNDLE_ID_PREFIX).watch and the companion
+// id in the watch Info.plist follows the same prefix.
+BUNDLE_ID_PREFIX = com.chris.meetingnotes
+MARKETING_VERSION = 1.0
+CURRENT_PROJECT_VERSION = 1
+DEVELOPMENT_LANGUAGE = zh-Hans
+SWIFT_VERSION = 5.0
+// Set your Personal Team in Xcode Signing & Capabilities, or uncomment:
+// DEVELOPMENT_TEAM = YOURTEAMID
+CODE_SIGN_STYLE = Automatic

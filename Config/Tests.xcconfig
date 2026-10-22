@@ -1,0 +1,5 @@
+#include "Shared.xcconfig"
+
+PRODUCT_BUNDLE_IDENTIFIER = $(BUNDLE_ID_PREFIX).tests
+PRODUCT_NAME = MeetingNotesTests
+GENERATE_INFOPLIST_FILE = YES

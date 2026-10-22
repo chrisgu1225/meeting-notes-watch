@@ -1,0 +1,6 @@
+#include "Shared.xcconfig"
+
+PRODUCT_BUNDLE_IDENTIFIER = $(BUNDLE_ID_PREFIX).watch
+PRODUCT_NAME = MeetingNotesWatch
+INFOPLIST_FILE = MeetingNotesWatch/Info.plist
+COMPANION_APP_BUNDLE_IDENTIFIER = $(BUNDLE_ID_PREFIX)
