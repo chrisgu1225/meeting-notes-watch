@@ -165,7 +165,7 @@ private struct LiveBanner: View {
                  ? "屏幕会保持常亮。声音只在内存里，不会写成录音文件。"
                  : "App 不在前台，这段话不会记下来。回到这个页面才会继续。")
                 .font(.footnote)
-                .foregroundStyle(foreground ? .secondary : .orange)
+                .foregroundStyle(foreground ? Color.secondary : Color.orange)
         }
         .padding(.vertical, 4)
     }

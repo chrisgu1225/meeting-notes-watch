@@ -48,7 +48,7 @@ struct WatchRootView: View {
                 .tint(.green)
                 Text(model.phoneReachable ? "手机已连接" : "请打开手机上的记要点")
                     .font(.caption2)
-                    .foregroundStyle(model.phoneReachable ? .secondary : .orange)
+                    .foregroundStyle(model.phoneReachable ? Color.secondary : Color.orange)
             }
             .padding(.horizontal, 4)
         }
