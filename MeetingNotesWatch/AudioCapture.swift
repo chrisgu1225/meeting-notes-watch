@@ -30,7 +30,8 @@ final class AudioCapture {
         if isRunning { stop() }
         let session = AVAudioSession.sharedInstance()
         try session.setCategory(.record, mode: .default, options: [])
-        try session.setPreferredSampleRate(Double(AudioStreamFormat.sampleRate))
+        // watchOS does not implement setPreferredSampleRate. The tap format is
+        // whatever the hardware delivers, and convert(_:) resamples to 16 kHz.
         try session.setActive(true)
 
         let input = engine.inputNode
