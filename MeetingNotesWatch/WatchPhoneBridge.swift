@@ -29,7 +29,7 @@ final class WatchPhoneBridge: NSObject, WCSessionDelegate {
             completion?(false)
             return
         }
-        session.sendMessage(message, replyHandler: { _ in
+        session.sendMessage(WireProtocol.anyDictionary(message), replyHandler: { _ in
             DispatchQueue.main.async { completion?(true) }
         }, errorHandler: { _ in
             DispatchQueue.main.async { completion?(false) }
@@ -67,7 +67,7 @@ final class WatchPhoneBridge: NSObject, WCSessionDelegate {
         didReceiveMessage message: [String: Any],
         replyHandler: @escaping ([String: Any]) -> Void
     ) {
-        replyHandler(["status": "ok"])
+        replyHandler(WireProtocol.anyDictionary(["status": "ok"]))
         DispatchQueue.main.async { self.onMessage?(message) }
     }
 }

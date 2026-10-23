@@ -260,11 +260,9 @@ final class WatchModel: ObservableObject {
     }
 
     private func requestMicrophone() async -> Bool {
-        await withCheckedContinuation { continuation in
-            AVAudioSession.sharedInstance().requestRecordPermission { granted in
-                continuation.resume(returning: granted)
-            }
-        }
+        // `AVAudioSession.requestRecordPermission` is deprecated. This
+        // replacement is available on watchOS 10 and later.
+        await AVAudioApplication.requestRecordPermission()
     }
 
     private func observeAudioSession() {
@@ -290,12 +288,24 @@ final class WatchModel: ObservableObject {
         }
     }
 
+    /// Notification userInfo stores the interruption type as `NSNumber`.
+    /// `as? UInt` does not bridge that, so the interruption was ignored.
+    private func interruptionType(from notification: Notification) -> AVAudioSession.InterruptionType? {
+        let raw: UInt?
+        if let number = notification.userInfo?[AVAudioSessionInterruptionTypeKey] as? NSNumber {
+            raw = number.uintValue
+        } else if let value = notification.userInfo?[AVAudioSessionInterruptionTypeKey] as? UInt {
+            raw = value
+        } else {
+            raw = nil
+        }
+        guard let raw else { return nil }
+        return AVAudioSession.InterruptionType(rawValue: raw)
+    }
+
     private func handleInterruption(_ notification: Notification) {
         guard phase == .listening || phase == .preparing else { return }
-        guard
-            let raw = notification.userInfo?[AVAudioSessionInterruptionTypeKey] as? UInt,
-            let type = AVAudioSession.InterruptionType(rawValue: raw)
-        else { return }
+        guard let type = interruptionType(from: notification) else { return }
         switch type {
         case .began:
             captureInterrupted = true

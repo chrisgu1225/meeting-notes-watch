@@ -29,12 +29,14 @@ final class WatchBridge: NSObject, WCSessionDelegate {
         guard WCSession.isSupported() else { return }
         let session = WCSession.default
         guard session.activationState == .activated, session.isReachable else { return }
-        session.sendMessage(message, replyHandler: nil, errorHandler: nil)
+        session.sendMessage(WireProtocol.anyDictionary(message), replyHandler: nil, errorHandler: nil)
     }
 
     func pushContext(language: MeetingLanguage) {
         guard WCSession.isSupported(), WCSession.default.activationState == .activated else { return }
-        try? WCSession.default.updateApplicationContext(["language": language.rawValue])
+        try? WCSession.default.updateApplicationContext(
+            WireProtocol.anyDictionary(["language": language.rawValue])
+        )
     }
 
     func session(
@@ -59,14 +61,16 @@ final class WatchBridge: NSObject, WCSessionDelegate {
         replyHandler: @escaping ([String: Any]) -> Void
     ) {
         let type = message["type"] as? String
+        let status: String
         switch type {
         case "start":
-            replyHandler(["status": "preparing"])
+            status = "preparing"
         case "stop":
-            replyHandler(["status": "stopping"])
+            status = "stopping"
         default:
-            replyHandler(["status": "ok"])
+            status = "ok"
         }
+        replyHandler(WireProtocol.anyDictionary(["status": status]))
         deliver(message)
     }
 

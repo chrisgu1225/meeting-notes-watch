@@ -19,6 +19,17 @@ enum WireProtocol {
     static let audioKind: UInt8 = 1
     static let headerLength = 34
 
+    /// `WCSession` takes `[String: Any]`. Swift dictionaries are invariant, so a
+    /// `[String: String]` value does not convert and the call does not compile.
+    static func anyDictionary(_ message: [String: String]) -> [String: Any] {
+        var boxed: [String: Any] = [:]
+        boxed.reserveCapacity(message.count)
+        for (key, value) in message {
+            boxed[key] = value
+        }
+        return boxed
+    }
+
     struct AudioPacket: Equatable {
         var sessionID: UUID
         var sequence: UInt32
@@ -83,6 +94,10 @@ enum WireProtocol {
         ]
     }
 
+    static func parseStart(_ message: [String: String]) -> StartCommand? {
+        parseStart(anyDictionary(message))
+    }
+
     static func parseStart(_ message: [String: Any]) -> StartCommand? {
         guard string(message, "type") == "start" else { return nil }
         guard
@@ -124,6 +139,10 @@ enum WireProtocol {
         ]
     }
 
+    static func parseMark(_ message: [String: String]) -> (sessionID: UUID, startedAt: Date)? {
+        parseMark(anyDictionary(message))
+    }
+
     static func parseMark(_ message: [String: Any]) -> (sessionID: UUID, startedAt: Date)? {
         guard string(message, "type") == "mark" else { return nil }
         guard
@@ -143,6 +162,10 @@ enum WireProtocol {
         ]
     }
 
+    static func parseGap(_ message: [String: String]) -> (sessionID: UUID, marker: String)? {
+        parseGap(anyDictionary(message))
+    }
+
     static func parseGap(_ message: [String: Any]) -> (sessionID: UUID, marker: String)? {
         guard string(message, "type") == "gap" else { return nil }
         guard
@@ -152,6 +175,10 @@ enum WireProtocol {
             GapMarker.all.contains(marker)
         else { return nil }
         return (sessionID, marker)
+    }
+
+    static func parseStop(_ message: [String: String]) -> StopCommand? {
+        parseStop(anyDictionary(message))
     }
 
     static func parseStop(_ message: [String: Any]) -> StopCommand? {
@@ -186,10 +213,12 @@ enum WireProtocol {
     }
 
     private static func readUInt32(_ data: Data, _ offset: Int) -> UInt32 {
-        let slice = data.subdata(in: offset..<(offset + 4))
-        return slice.withUnsafeBytes { raw in
-            UInt32(bigEndian: raw.load(as: UInt32.self))
-        }
+        // Byte-wise so an unaligned `Data` buffer cannot trap in `load(as:)`.
+        let b0 = UInt32(data[offset])
+        let b1 = UInt32(data[offset + 1])
+        let b2 = UInt32(data[offset + 2])
+        let b3 = UInt32(data[offset + 3])
+        return (b0 << 24) | (b1 << 16) | (b2 << 8) | b3
     }
 
     private static func uuidData(_ id: UUID) -> Data {

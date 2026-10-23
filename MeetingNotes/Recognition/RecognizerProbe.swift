@@ -20,13 +20,18 @@ enum RecognizerProbe {
         async let dictationEnglish = DictationTranscriber.supportedLocale(equivalentTo: MeetingLanguage.australianEnglish.locale)
         let mandarinSF = SFSpeechRecognizer(locale: MeetingLanguage.mandarin.locale)
         let englishSF = SFSpeechRecognizer(locale: MeetingLanguage.australianEnglish.locale)
-        return await ModelStatus(
+        // `await` on the initializer does not await `async let` arguments.
+        let longFormMandarinLocale = await longFormMandarin
+        let longFormEnglishLocale = await longFormEnglish
+        let dictationMandarinLocale = await dictationMandarin
+        let dictationEnglishLocale = await dictationEnglish
+        return ModelStatus(
             speechAuthorized: SFSpeechRecognizer.authorizationStatus() == .authorized,
             speechTranscriberAvailable: SpeechTranscriber.isAvailable,
-            longFormMandarin: longFormMandarin?.identifier(.bcp47),
-            longFormEnglish: longFormEnglish?.identifier(.bcp47),
-            dictationMandarin: dictationMandarin?.identifier(.bcp47),
-            dictationEnglish: dictationEnglish?.identifier(.bcp47),
+            longFormMandarin: longFormMandarinLocale?.identifier(.bcp47),
+            longFormEnglish: longFormEnglishLocale?.identifier(.bcp47),
+            dictationMandarin: dictationMandarinLocale?.identifier(.bcp47),
+            dictationEnglish: dictationEnglishLocale?.identifier(.bcp47),
             classicMandarinOnDevice: mandarinSF?.supportsOnDeviceRecognition ?? false,
             classicEnglishOnDevice: englishSF?.supportsOnDeviceRecognition ?? false
         )

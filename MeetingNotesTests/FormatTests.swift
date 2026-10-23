@@ -156,7 +156,12 @@ final class FormatTests: XCTestCase {
         XCTAssertEqual(WireProtocol.parseStop(stop)?.droppedChunks, 3)
         let gap = WireProtocol.gapMessage(sessionID: id, marker: GapMarker.audioInterruption)
         XCTAssertEqual(WireProtocol.parseGap(gap)?.marker, GapMarker.audioInterruption)
-        XCTAssertNil(WireProtocol.parseGap(["type": "gap", "sessionId": id.uuidString, "marker": "nope"]))
+        let rejected: [String: String] = [
+            "type": "gap",
+            "sessionId": id.uuidString,
+            "marker": "nope"
+        ]
+        XCTAssertNil(WireProtocol.parseGap(rejected))
     }
 
     func testTextExportRefusesAudioExtension() {
